@@ -8,12 +8,10 @@
  */
 // vue.config.js
 module.exports = {
-    chainWebpack: config => {
-      config
-        .plugin('html')
-        .tap(args => {
-          args[0].title= '成功丰硕'
-          return args
-        })
-    }
-  }
+  chainWebpack: (config) => {
+    config.plugin("html").tap((args) => {
+      args[0].title = "成果丰硕";
+      return args;
+    });
+  },
+};
